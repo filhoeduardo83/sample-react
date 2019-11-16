@@ -5,8 +5,8 @@ import Home from '../components/home/Home'
 import UserCrud from '../components/user/UserCrud'
 
 export default props =>
-    <switch>
+    <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/users' component={UserCrud} />
         <Redirect from='*' to='/' />
-    </switch>
+    </Switch>
